@@ -1,14 +1,49 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root{
+    --verde-azulado: rgb(95, 188, 33);
+    --azul: rgb(71, 2, 66);
+    --amarelo: rgb(3, 255, 87);
+    --laranja: rgb(251, 0, 0);
+    --titulo: "Bebas Neue", sans-serif;
+    --texto: "Raleway", sans-serif;
+}
+body{
+    background-color: var(--verde-azulado);
+    font-family: var(--texto);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    margin-top: 20px;
+    max-width: 90%;
+    text-align: center;
+}
+button{
+    font-family: var(--titulo);
+    background-color: var(--azul);
+    color: var(--laranja);
+    border: 2px solid var(--azul);
+    padding: 20px 30px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 20px;
+}
+button:hover{
+    background-color: var(--laranja);
+    color: var(--azul);
+    transition: 0.5s;
+}
 
+.passo{
+    font-size: 24px;
+    display: none;
+}
 
-
-
-:root {
-    --space-cadet: #2b2d42ff;
-    --cool-gray: #8d99aeff;
-    --antiflash-white: #edf2f4ff;
-    --red-pantone: #ef233cff;
-    --titulo: "Inter", sans-serif;
-    --texto: 
+.passo.ativo{
+    display: block;
 }
